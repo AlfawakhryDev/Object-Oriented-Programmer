@@ -65,18 +65,14 @@ And provides the following methods:
 
 ### `Programmer` Class (Inherits from `Employee`)
 
-The `Programmer` class extends the `Employee` class with these additional attributes:
+The `Programmer` class extends the `Employee` class with this additional attribute:
 
 - `string programmingLanguage`
-- `vector<string> skills`
 
 And provides the following methods:
 
 - `string getProgrammingLanguage()`
 - `void setProgrammingLanguage(string language)`
-- `vector<string> getSkills()`
-- `void addSkill(string skill)`
-- `void removeSkill(string skill)`
 - `void print()` (overrides the `print()` method of the `Employee` class)
 
 ## Example
@@ -99,10 +95,8 @@ int main() {
 
     // Create a Programmer object
     Programmer programmer1(3, "Jane", "Smith", "jane.smith@company.com", "555-987-6543", "Senior Programmer", 95000.0, "Engineering", "C++");
-    programmer1.addSkill("Java");
-    programmer1.addSkill("Python");
     programmer1.print();
-    programmer1.sendEmail("Project Update", "Theproject is progressing well.");
+    programmer1.sendEmail("Project Update", "The project is progressing well.");
     programmer1.sendSms("Code review reminder");
 
     return 0;
